@@ -54,3 +54,52 @@ p {
 }
 This will show an ellipsis (...) when the text overflows.
 
+QN3) Explain The CSS Box Model .
+ANS:
+The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used QN.2) What is text-overflow property in CSS ? How can you use clip and ellipseis in text-overflow ?
+ANS:
+The text-overflow property in CSS controls how text is displayed when it overflows its containing element. It allows you to specify whether the overflowing text should be clipped or replaced with an ellipsis (...).
+Usage of text-overflow
+It works together with:
+•	overflow: hidden; (to hide overflowing content)
+•	white-space: nowrap; (to prevent text from wrapping onto a new line)
+Values of text-overflow
+1.	clip: Cuts off the overflowing text without adding any visual indicator.
+p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+This will hide any overflowing text without showing any indication.
+2.	ellipsis: Replaces the clipped text with an ellipsis (...).
+p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+This will show an ellipsis (...) when the text overflows.
+
+as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model.
+Box-Model has multiple properties in CSS. Some of them are given below:
+•	Content – The content of the box, where text and images appear
+•	Padding – The space between the content and the border, increasing the element's size.
+•	Border – The boundary surrounding the padding and content. It can have different styles, widths, and colors.
+•	Margin The outer space between the element and other elements, creating separation.
+For Eg.
+div {
+  width: 200px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+}
+This means:
+•	Content width: 200px
+•	Padding adds: 10px (total 220px)
+•	Border adds: 5px (total 230px)
+•	Margin creates space outside: 20px
+The total space the element occupies = 230px + margin (20px each side).
+
+ 
+
