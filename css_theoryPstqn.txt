@@ -155,6 +155,42 @@ left: 10px;
 </html>
 
 
+QN.5) What are the usages of class and id selectors in CSS? Illustrate with example.
+ANS:
+In CSS, class and ID selectors are used to style specific elements efficiently.
+1. Class Selector (.)
+•	Used to apply styles to multiple elements.
+•	Defined using a dot (.) followed by the class name.
+2. ID Selector (#)
+•	Used to apply styles to a single, unique element.
+•	Defined using a hash (#) followed by the ID name.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSIT</title>
+    <style>
+        /* CSS */
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        #special-text {
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">This paragraph has the 'highlight' class.</p>
+    <p>This is a regular paragraph.</p>
+    <p id="special-text">This paragraph has the 'special-text' ID.</p>
+    <p class="highlight">Another paragraph with the 'highlight' class.</p>
+</body>
+</html>
+ 
+
 
 
 
