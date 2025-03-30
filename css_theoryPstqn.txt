@@ -29,3 +29,28 @@ Let’s understand with example
 </body>
 </html>
 Internal CSS is placed directly within an HTML document. It is defined inside the <style> tag within the <head> section. Internal CSS is useful for styling a single HTML page specifically, without affecting other pages.
+QN.2) What is text-overflow property in CSS ? How can you use clip and ellipseis in text-overflow ?
+ANS:
+The text-overflow property in CSS controls how text is displayed when it overflows its containing element. It allows you to specify whether the overflowing text should be clipped or replaced with an ellipsis (...).
+Usage of text-overflow
+It works together with:
+•	overflow: hidden; (to hide overflowing content)
+•	white-space: nowrap; (to prevent text from wrapping onto a new line)
+Values of text-overflow
+1.	clip: Cuts off the overflowing text without adding any visual indicator.
+p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+This will hide any overflowing text without showing any indication.
+2.	ellipsis: Replaces the clipped text with an ellipsis (...).
+p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+This will show an ellipsis (...) when the text overflows.
+
