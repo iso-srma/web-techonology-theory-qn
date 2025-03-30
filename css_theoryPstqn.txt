@@ -1,0 +1,31 @@
+QN.1) How internal CSS is different from external CSS .Explain with example?
+ANS:
+Internal CSS and External CSS are two techniques for applying styles to HTML texts, each with its own set of benefits and applications.
+Let’s understand with example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Internal CSS Example</h1>
+    <p>This page uses internal CSS to apply styles.</p>
+
+</body>
+</html>
+Internal CSS is placed directly within an HTML document. It is defined inside the <style> tag within the <head> section. Internal CSS is useful for styling a single HTML page specifically, without affecting other pages.
