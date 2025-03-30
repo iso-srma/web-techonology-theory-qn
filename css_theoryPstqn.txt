@@ -101,5 +101,60 @@ This means:
 •	Margin creates space outside: 20px
 The total space the element occupies = 230px + margin (20px each side).
 
- 
+ QN.4) How can you define position property for specifying specific positioning of an HTML element? Write internal CSS to illustrate position of an HTML div.
+ANS;
+The position property in CSS is used to specify the positioning method of an HTML element. It has five main values:
+1.	static (default) - The element follows the normal document flow.
+2.	relative - The element is positioned relative to its normal position.
+3.	absolute - The element is positioned relative to the nearest positioned ancestor (or the document if none).
+4.	fixed - The element is positioned relative to the viewport and does not move when scrolling.
+5.	sticky - The element toggles between relative and fixed depending on the scroll position.
+
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset=”UTF-8″>
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+<title>Positioning Example</title>
+<style>
+/* Internal CSS for styling */
+.positioned-div {
+width: 200px;
+height: 100px;
+background-color: lightblue;
+border: 1px solid blue;
+}
+/* Different position values */
+.static {
+position: static;
+}
+.relative {
+position: relative;
+left: 30px;
+top: 20px;
+}
+.absolute {
+position: absolute;
+right: 50px;
+bottom: 30px;
+}
+.fixed {
+position: fixed;
+top: 10px;
+left: 10px;
+}
+</style>
+</head>
+<body>
+<!– HTML content with different positioned divs –>
+<div class=”positioned-div static”>Static Position</div>
+<div class=”positioned-div relative”>Relative Position</div>
+<div class=”positioned-div absolute”>Absolute Position</div>
+<div class=”positioned-div fixed”>Fixed Position</div>
+</body>
+</html>
+
+
+
+
 
